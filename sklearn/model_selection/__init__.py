@@ -4,6 +4,7 @@ from ._split import BaseCrossValidator
 from ._split import KFold
 from ._split import GroupKFold
 from ._split import StratifiedKFold
+from ._split import StratifiedGroupKFold
 from ._split import TimeSeriesSplit
 from ._split import LeaveOneGroupOut
 from ._split import LeaveOneOut
@@ -11,9 +12,11 @@ from ._split import LeavePGroupsOut
 from ._split import LeavePOut
 from ._split import RepeatedKFold
 from ._split import RepeatedStratifiedKFold
+from ._split import RepeatedStratifiedGroupKFold
 from ._split import ShuffleSplit
 from ._split import GroupShuffleSplit
 from ._split import StratifiedShuffleSplit
+from ._split import StratifiedGroupShuffleSplit
 from ._split import PredefinedSplit
 from ._split import train_test_split
 from ._split import check_cv
@@ -51,13 +54,16 @@ __all__ = ['BaseCrossValidator',
            'LeavePOut',
            'RepeatedKFold',
            'RepeatedStratifiedKFold',
+           'RepeatedStratifiedGroupKFold',
            'ParameterGrid',
            'ParameterSampler',
            'PredefinedSplit',
            'RandomizedSearchCV',
            'ShuffleSplit',
            'StratifiedKFold',
+           'StratifiedGroupKFold',
            'StratifiedShuffleSplit',
+           'StratifiedGroupShuffleSplit',
            'check_cv',
            'cross_val_predict',
            'cross_val_score',
